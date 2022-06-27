@@ -1,0 +1,17 @@
+mat-nav-list {
+  padding-top: 0;
+
+  a {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  a.select {
+    background-color: hsl(262, 39%, 90%);
+    color: hsl(262, 52%, 47%);
+  }
+
+  a.select:hover {
+    background-color: hsl(262, 43%, 83%);
+    color: hsl(262, 52%, 47%);
+  }
+}

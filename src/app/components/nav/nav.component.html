@@ -1,0 +1,10 @@
+<mat-nav-list>
+  <a
+    mat-list-item
+    *ngFor="let room of rooms"
+    [routerLink]="['/rooms', room.id]"
+    routerLinkActive="select"
+  >
+    Classroom - {{ room.name | uppercase }}
+  </a>
+</mat-nav-list>

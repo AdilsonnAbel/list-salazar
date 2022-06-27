@@ -1,0 +1,16 @@
+<ng-template [ngIf]="classroom">
+  <section>
+    <article
+      [ngClass]="student.state === 'approved' ? 'in' : 'out'"
+      *ngFor="let student of classroom.students"
+    >
+      <div>{{ student.id }}</div>
+      <div>
+        <span class="mat-body-2">
+          {{ student.lastNames.join(" ") | uppercase }}
+        </span>
+        <span> , {{ student.names.join(" ") | titlecase }}</span>
+      </div>
+    </article>
+  </section>
+</ng-template>
